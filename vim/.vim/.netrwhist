@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Giseudo/Documents/Apps/esperanca-vida'
+let g:netrw_dirhist_2='/Users/Giseudo/Documents/Apps/arkanoid'
+let g:netrw_dirhist_3='/Users/Giseudo/Documents/Apps/esperanca-vida'
+let g:netrw_dirhist_4='/Users/Giseudo/Documents/Apps/memorial'
+let g:netrw_dirhist_5='/Users/Giseudo/.vim/bundle/vim-wakatime'

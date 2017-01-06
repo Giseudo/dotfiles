@@ -1,1 +1,7 @@
 set :tmux, true
+set :timer, 25*60
+set :timer_break, 5*60 
+
+after do |seconds_left|
+  `mplayer ~/bin/dotfiles/assets/sound/alert-mgs.mp3 &`
+end

@@ -33,10 +33,16 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mattn/emmit-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'benmills/vimux'
+Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 filetype plugin indent on
 
 " Thyme mapping
 nmap <leader>t :!thyme -d<cr>
+
+" Vimux mappin
+nmap <leader>b :VimuxRunCommand("love .")<cr>

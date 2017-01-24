@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Giseudo/.oh-my-zsh
+export ZSH=/Users/giseudo/.oh-my-zsh
 
 # Default editor
 export EDITOR='vim'
@@ -12,9 +12,9 @@ export EDITOR='vim'
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-source ~/bin/dotfiles/env
-source ~/bin/dotfiles/alias
-source ~/bin/dotfiles/prompt
+source ~/Code/dotfiles/env
+source ~/Code/dotfiles/alias
+source ~/Code/dotfiles/prompt
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

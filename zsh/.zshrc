@@ -62,6 +62,9 @@ plugins=(git brew npm bower docker composer gem)
 
 source $ZSH/oh-my-zsh.sh
 
+# Initialize rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

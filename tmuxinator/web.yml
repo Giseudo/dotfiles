@@ -31,7 +31,7 @@ root: ~/Code
 # post: tmux -CC attach -t web
 
 windows:
-  - editor:
+  - frontend:
       layout: 12d5,181x45,0,0[181x36,0,0,0,181x8,0,37,1]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
@@ -39,6 +39,11 @@ windows:
       panes:
         - vim
         -
-  - docker:
+  - backend:
+      layout: 12d5,181x45,0,0[181x36,0,0,0,181x8,0,37,1]
       panes:
-        - docker-machine start default
+        - vim
+        - docker-machine start default &&
+          cd laradock &&
+          eval "$(docker-machine env default)" &&
+          docker-compose up -d mysql nginx

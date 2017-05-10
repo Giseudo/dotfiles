@@ -46,3 +46,6 @@ nmap <leader>t :!thyme -d<cr>
 
 " Vimux mappin
 nmap <leader>b :VimuxRunCommand("love .")<cr>
+nmap <leader>p :VimuxRunCommand("python -m main")<cr>
+
+autocmd VimEnter * NERDTree

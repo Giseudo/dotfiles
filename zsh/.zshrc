@@ -93,3 +93,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+ssh-add ~/.ssh/id_github
+ssh-add ~/.ssh/id_bitbucket

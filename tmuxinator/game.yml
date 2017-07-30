@@ -32,7 +32,7 @@ root: ~/Code
 
 windows:
   - game:
-      layout: 12d5,181x45,0,0[181x36,0,0,0,181x8,0,37,1]
+      layout: 1ad0,181x52,0,0[181x43,0,0,0,181x8,0,44,2]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
@@ -40,7 +40,7 @@ windows:
         - vim
         -
   - engine:
-      layout: 12d5,181x45,0,0[181x36,0,0,0,181x8,0,37,1]
+      layout: 1ad0,181x52,0,0[181x43,0,0,0,181x8,0,44,2]
       panes:
         - vim
         -

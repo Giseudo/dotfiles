@@ -1,0 +1,17 @@
+" Quick command mode
+nnoremap ; :
+ 
+" Search the string cursor points to. Very Useful.
+map ,s viw:xccmd findSelectedTextInWorkspace<CR>
+ 
+" Save when esc
+ino <Esc> <Esc>:xcmenucmd Save<CR>
+ 
+" tab new
+map ,tn :xccmd newTab<CR>
+" tab close
+map ,tc :tabclose<CR>
+" tab pre
+map ,ti :xccmd selectPreviousTab<CR>
+" tab next
+map ,to :xccmd selectNextTab<CR>

@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/opt/php@7.1/sbin:/usr/local/opt/php@7.1/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/giseudo/.oh-my-zsh
@@ -10,7 +10,7 @@ export EDITOR='vim'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="ys"
 
 source ~/Code/dotfiles/env
 source ~/Code/dotfiles/alias
@@ -83,7 +83,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/id_github"
+export SSH_KEY_PATH="~/.ssh/id_bitbucket"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -94,5 +95,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-ssh-add ~/.ssh/id_github
-ssh-add ~/.ssh/id_bitbucket
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/giseudo/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/giseudo/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/giseudo/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/giseudo/google-cloud-sdk/completion.zsh.inc'; fi

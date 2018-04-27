@@ -32,7 +32,7 @@ root: ~/Code
 
 windows:
   - frontend:
-      layout: aefd,272x70,0,0[272x57,0,0,0,272x12,0,58{136x12,0,58,2,135x12,137,58,5}]
+      layout: 2229,181x45,0,0[181x41,0,0,0,181x3,0,42{91x3,0,42,1,89x3,92,42,2}]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after

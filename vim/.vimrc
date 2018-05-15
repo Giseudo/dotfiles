@@ -12,7 +12,7 @@ set t_Co=16
 let g:airline_powerline_fonts = 1
 
 " Set list chars
-set list
+set nolist
 set nu
 set listchars=tab:▸\ ,eol:¬
 set tabstop=2

@@ -32,7 +32,16 @@ root: ~/Code
 
 windows:
   - frontend:
-      layout: 2229,181x45,0,0[181x41,0,0,0,181x3,0,42{91x3,0,42,1,89x3,92,42,2}]
+      layout: 6307,204x51,0,0[204x44,0,0,1,204x6,0,45{102x6,0,45,4,101x6,103,45,5}]
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - vim
+        -
+        -
+  - backend:
+      layout: 6307,204x51,0,0[204x44,0,0,1,204x6,0,45{102x6,0,45,4,101x6,103,45,5}]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after

@@ -49,3 +49,6 @@ windows:
         - vim
         -
         -
+  - music:
+      panes:
+        - cd ../Music && cmus

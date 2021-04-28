@@ -2,11 +2,12 @@ syntax enable
 
 " Setup theme
 set background=dark
+" let g:solarized_termcolors = 256
 let g:solarized_termtrans = 16
 colorscheme solarized
 
 " Explicity tell terminal to use 16 bits colors
-set t_Co=16
+set t_Co=256
 
 " Vim Airline symbols
 let g:airline_powerline_fonts = 1
@@ -18,6 +19,7 @@ set listchars=tab:▸\ ,eol:¬
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set expandtab
 
 set nocompatible
 filetype off
@@ -32,29 +34,20 @@ set lazyredraw
 set dir=$HOME/.vim_tmp/swap//
 if !isdirectory(&dir) | call mkdir(&dir, 'p', 0700) | endif
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'posva/vim-vue'
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'evidens/vim-twig'
-Plugin 'mustache/vim-mustache-handlebars'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'pangloss/vim-javascript'
-Plugin 'mattn/emmet-vim'
-" Plugin 'hail2u/vim-css3-syntax'
-" Plugin 'benmills/vimux'
-Plugin 'wakatime/vim-wakatime'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'leafgarland/typescript-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'posva/vim-vue'
+Plug 'tpope/vim-fugitive' " the ultimate git helper
+Plug 'evidens/vim-twig'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'tikhomirov/vim-glsl'
+Plug 'mattn/emmet-vim'
+Plug 'wakatime/vim-wakatime'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 " Fix vue-vim stylesheet slowing down
 let g:vue_disable_pre_processors=1
